@@ -122,6 +122,80 @@ console.log(" return value ", firstval, secondval);
 
 
 
+// javascript object;
+
+
+var student = { id: 101, phone: 0125552, name: "Hasim" };
+var studenttwo = { id: 102, phone: 0125544, name: "Akram" };
+console.log(student, studenttwo);
+
+
+var stphone = student.phone;
+var stname = student["name"];
+//update object property
+student.phone = 25255;
+//add property
+student.gender = "male";
+
+console.log(stphone);
+console.log(stname);
+console.log(student, studenttwo);
+
+
+// var inch = 2578;
+// var feet = inch / 12;
+// console.log('feet ', feet);
+
+
+function inchTOfeet(inch) {
+
+    var feet = inch / 12;
+
+    return feet;
+}
+var feet1 = inchTOfeet(500);
+var feet2 = inchTOfeet(60);
+
+
+console.log(feet1);
+console.log(feet2);
+
+
+
+var namev = "javed Akber";
+const country = "Bangladesh";
+console.log(namev);
+
+if (namev.length > 5) {
+    namev = "jave";
+}
+console.log(namev);
+console.log(country);
+
+
+//factorial with recursive
+
+
+//5! = 4!*5/ (5-1)!*5
+//6! =(6-1)!*6
+
+function factorial(n) {
+    if (n == 0) {
+        return 1;
+    }
+    else {
+        return n = n * factorial(n - 1);
+    }
+}
+var result = factorial(5);
+
+console.log(result);
+
+
+
+
+
+
 
 
 
