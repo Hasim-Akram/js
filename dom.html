@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <h1 id="h1">Exploring DOM</h1>
+        <h1>This is javascript DOM Document object model</h1>
+        <p>this is first para</p>
+
+        <p>This is dom Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi adipisci nam quo numquam
+            consequatur nihil voluptatem, voluptas magnam, esse temporibus tempora harum aperiam porro suscipit
+            perferendis corrupti maiores culpa molestiae. </p>
+    </section>
+
+    <section>
+        <article class="special">
+            <h1>Article 1</h1>
+            <h1 class="author">Author</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eius
+                exercitationem voluptatum
+                voluptate tempore molestiae atque magni aliquam nulla facilis beatae temporibus expedita debitis alias
+                dolorum. Ducimus dolores iure doloribus.</p>
+        </article>
+    </section>
+
+    <section>
+        <article class="special">
+            <h1>Article 2</h1>
+            <h1 class="author">Author</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eius exercitationem
+                voluptatum
+                voluptate tempore molestiae atque magni aliquam nulla facilis beatae temporibus expedita debitis alias
+                dolorum. Ducimus dolores iure doloribus.</p>
+        </article>
+    </section>
+    <section>
+        <article class="special">
+            <h1>Article 3</h1>
+            <h1 class="author">Author</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eius exercitationem
+                voluptatum
+                voluptate tempore molestiae atque magni aliquam nulla facilis beatae temporibus expedita debitis alias
+                dolorum. Ducimus dolores iure doloribus.</p>
+        </article>
+    </section>
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+        var authors = document.getElementsByClassName('author');
+        for (var i = 0; i < authors.length; i++) {
+            var element = authors[i];
+
+            element.style.color = 'green';
+
+            element.innerHTML = ' Lekhok- ' + i;
+        }
+
+
+        var first = document.getElementById('h1');
+
+        first.style.color = 'red';
+        first.style.fontSize = '30px';
+
+
+
+
+        console.log(document);
+        console.log(document.body);
+
+    </script>
+
+</body>
+
+</html>
