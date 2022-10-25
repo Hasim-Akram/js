@@ -17,7 +17,23 @@
     <button onclick="document.getElementById('image').src='pic_bulboff.gif'">Turn off The Light
 
     </button>
+    <br />
 
+    <button id="btn01" onclick="handleclick()">Clicked me 1</button>
+    <button>Clicked me 1</button>
+    <button>Clicked me 1</button>
+
+
+    <script>
+
+        function handleclick() {
+
+            document.getElementById('btn01').innerHTML = Date();
+        }
+
+    </script>
+
+    <!-- <button onclick="alert('button clicked')">Click me</button> -->
 
 
 
@@ -53,6 +69,7 @@
 
     <script src="index.js"></script>
     <script src="2nd.js"></script>
+    <script src="function.js"></script>
 
 
 </body>

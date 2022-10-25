@@ -12,6 +12,7 @@
 
     <section>
         <h1 id="h1">Exploring DOM</h1>
+
         <h1>This is javascript DOM Document object model</h1>
         <p>this is first para</p>
 
@@ -22,7 +23,7 @@
 
     <section>
         <article class="special">
-            <h1>Article 1</h1>
+            <h1 id="artile1">Article 1</h1>
             <h1 class="author">Author</h1>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eius
                 exercitationem voluptatum
@@ -61,6 +62,13 @@
     <script>
 
 
+
+
+        //for adding attribute and data
+        var articles = document.getElementById('artile1');
+        var newattr = document.createElement('h3');
+        newattr.innerHTML = "this is arcle added by InnerHTML";
+        articles.append(newattr);
 
 
         var authors = document.getElementsByClassName('author');
